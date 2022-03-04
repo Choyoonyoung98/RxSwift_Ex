@@ -27,7 +27,7 @@
         <!--메모 목록-->
         <scene sceneID="emS-vW-03i">
             <objects>
-                <viewController id="PLp-v4-wUN" sceneMemberID="viewController">
+                <viewController id="PLp-v4-wUN" customClass="MemoListViewController" customModule="RxMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q5M-bv-dCs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,7 +44,7 @@
         <!--새 메모-->
         <scene sceneID="P3n-3C-IP7">
             <objects>
-                <viewController id="etl-bK-TAV" sceneMemberID="viewController">
+                <viewController id="etl-bK-TAV" customClass="MemoComposeViewController" customModule="RxMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RUw-Bf-bWO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,7 +79,7 @@
         <!--메모 보기-->
         <scene sceneID="kJB-ec-RfE">
             <objects>
-                <viewController storyboardIdentifier="DetailViewcontroller" id="eIy-X9-12e" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewcontroller" id="eIy-X9-12e" customClass="MemoDetailViewController" customModule="RxMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pa3-tA-KTD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
