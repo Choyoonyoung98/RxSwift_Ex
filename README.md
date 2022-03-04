@@ -6,3 +6,7 @@ https://github.com/RxSwiftCommunity/NSObject-Rx
 
 - 일반적으로 리소스 정리를 위해 사용하는 `disposeBag`. 하지만 클래스마다 처리해줘야 한다는 점이 번거롭다.  
 -> RxSwift 라이브러리 사용 시, NSObject를 상속한 모든 클래스의 disposeBag의 속성이 추가
+
+### 2) RxMemo
+- `RxSwift`,`RxCocoa`,`RxCoreData`,`RxDatasources`,`NSObject+RxSwift` 라이브러리 의존 
+- MVVM Architecture
