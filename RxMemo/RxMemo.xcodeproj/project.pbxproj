@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4C4EE7E427D1BF5C00A34F7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4EE7E327D1BF5C00A34F7D /* AppDelegate.swift */; };
 		4C4EE7E627D1BF5C00A34F7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4EE7E527D1BF5C00A34F7D /* SceneDelegate.swift */; };
-		4C4EE7E827D1BF5C00A34F7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4EE7E727D1BF5C00A34F7D /* ViewController.swift */; };
 		4C4EE7EB27D1BF5C00A34F7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4EE7E927D1BF5C00A34F7D /* Main.storyboard */; };
 		4C4EE7EE27D1BF5C00A34F7D /* RxMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C4EE7EC27D1BF5C00A34F7D /* RxMemo.xcdatamodeld */; };
 		4C4EE7F027D1BF5F00A34F7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4EE7EF27D1BF5F00A34F7D /* Assets.xcassets */; };
@@ -23,7 +22,6 @@
 		4C4EE7E027D1BF5C00A34F7D /* RxMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4EE7E327D1BF5C00A34F7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C4EE7E527D1BF5C00A34F7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4C4EE7E727D1BF5C00A34F7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C4EE7EA27D1BF5C00A34F7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C4EE7ED27D1BF5C00A34F7D /* RxMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RxMemo.xcdatamodel; sourceTree = "<group>"; };
 		4C4EE7EF27D1BF5F00A34F7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,16 +63,55 @@
 		4C4EE7E227D1BF5C00A34F7D /* RxMemo */ = {
 			isa = PBXGroup;
 			children = (
+				4C4EE7FE27D1C16F00A34F7D /* Scene */,
+				4C4EE7FD27D1C15B00A34F7D /* Service */,
+				4C4EE7FC27D1C0E500A34F7D /* ViewModel */,
+				4C4EE7FB27D1C0D100A34F7D /* ViewController */,
+				4C4EE7FA27D1C0BE00A34F7D /* Model */,
 				4C4EE7E327D1BF5C00A34F7D /* AppDelegate.swift */,
 				4C4EE7E527D1BF5C00A34F7D /* SceneDelegate.swift */,
-				4C4EE7E727D1BF5C00A34F7D /* ViewController.swift */,
-				4C4EE7E927D1BF5C00A34F7D /* Main.storyboard */,
 				4C4EE7EF27D1BF5F00A34F7D /* Assets.xcassets */,
-				4C4EE7F127D1BF5F00A34F7D /* LaunchScreen.storyboard */,
 				4C4EE7F427D1BF5F00A34F7D /* Info.plist */,
 				4C4EE7EC27D1BF5C00A34F7D /* RxMemo.xcdatamodeld */,
 			);
 			path = RxMemo;
+			sourceTree = "<group>";
+		};
+		4C4EE7FA27D1C0BE00A34F7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C4EE7FB27D1C0D100A34F7D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4C4EE7E927D1BF5C00A34F7D /* Main.storyboard */,
+				4C4EE7F127D1BF5F00A34F7D /* LaunchScreen.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4C4EE7FC27D1C0E500A34F7D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4C4EE7FD27D1C15B00A34F7D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4C4EE7FE27D1C16F00A34F7D /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 		AEF52A4F4152BB2F890FDDEE /* Frameworks */ = {
@@ -91,7 +128,6 @@
 				04058000AA5AFE01DAA1D8E6 /* Pods-RxMemo.debug.xcconfig */,
 				1E97795AF82E5DA48BE6900B /* Pods-RxMemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C4EE7E827D1BF5C00A34F7D /* ViewController.swift in Sources */,
 				4C4EE7E427D1BF5C00A34F7D /* AppDelegate.swift in Sources */,
 				4C4EE7E627D1BF5C00A34F7D /* SceneDelegate.swift in Sources */,
 				4C4EE7EE27D1BF5C00A34F7D /* RxMemo.xcdatamodeld in Sources */,
