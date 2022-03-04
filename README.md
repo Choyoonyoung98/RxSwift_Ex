@@ -10,3 +10,9 @@ https://github.com/RxSwiftCommunity/NSObject-Rx
 ### 2) RxMemo
 - `RxSwift`,`RxCocoa`,`RxCoreData`,`RxDatasources`,`NSObject+RxSwift` 라이브러리 의존 
 - MVVM Architecture
+  - 화면 전환: ViewModel과 Scene cordinator가 진행
+  - 나머지 부분: MVVM(Model, ViewController, ViewModel)
+- [Advanced iOS App Architecture](https://store.raywenderlich.com/products/advanced-ios-app-architecture)
+- [Clean Architecture and MVVM on iOS](https://tech.olx.com/clean-architecture-and-mvvm-on-ios-c9d167d9f5b3)
+- [RxCoreData](https://github.com/RxSwiftCommunity/RxCoreData)
+- [RxDataSources](https://github.com/RxSwiftCommunity/RxDataSources)
