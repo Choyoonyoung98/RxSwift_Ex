@@ -39,7 +39,7 @@ extension Scene {
             
             composeViewController.bind(viewModel: memoCompseViewModel)
     
-            return composeViewController
+            return composeNavigationViewcontroller
         }
     }
 }
