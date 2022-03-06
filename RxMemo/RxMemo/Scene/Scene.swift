@@ -30,6 +30,7 @@ extension Scene {
             guard var detailViewController = storyboard.instantiateViewController(withIdentifier: "DetailVC") as? MemoDetailViewController else { fatalError() }
             
             detailViewController.bind(viewModel: memoDetailViewModel)
+
             return detailViewController
         case .compose(let memoCompseViewModel):
             guard let composeNavigationViewcontroller = storyboard.instantiateViewController(withIdentifier: "ComposeNav") as? UINavigationController else { fatalError() }
@@ -37,6 +38,7 @@ extension Scene {
             guard var composeViewController = composeNavigationViewcontroller.viewControllers.first as? MemoComposeViewController else { fatalError() }
             
             composeViewController.bind(viewModel: memoCompseViewModel)
+    
             return composeViewController
         }
     }
