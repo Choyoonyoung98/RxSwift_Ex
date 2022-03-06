@@ -12,6 +12,10 @@ https://github.com/RxSwiftCommunity/NSObject-Rx
 - MVVM Architecture
   - 화면 전환: ViewModel과 Scene cordinator가 진행
   - 나머지 부분: MVVM(Model, ViewController, ViewModel)
+  - ViewModel에는 크게 2가지 요소 포함
+  1) 의존성을 주입하는 Intialize
+  2) 바인딩에 사용되는 속성과 메서드 
+
 - [Advanced iOS App Architecture](https://store.raywenderlich.com/products/advanced-ios-app-architecture)
 - [Clean Architecture and MVVM on iOS](https://tech.olx.com/clean-architecture-and-mvvm-on-ios-c9d167d9f5b3)
 - [RxCoreData](https://github.com/RxSwiftCommunity/RxCoreData)
