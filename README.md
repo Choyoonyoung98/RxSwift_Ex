@@ -26,6 +26,8 @@ https://github.com/RxSwiftCommunity/NSObject-Rx
 
 - Cocoa에서는 segue가 화면 이동을 처리, MVVM에서는 ViewModel이 처리
 
+> 생각해볼만한 문제: tap과 action을 통한 구현의 장단점 생각해보기
+
 - [Advanced iOS App Architecture](https://store.raywenderlich.com/products/advanced-ios-app-architecture)
 - [Clean Architecture and MVVM on iOS](https://tech.olx.com/clean-architecture-and-mvvm-on-ios-c9d167d9f5b3)
 - [RxCoreData](https://github.com/RxSwiftCommunity/RxCoreData)
