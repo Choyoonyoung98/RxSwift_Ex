@@ -66,7 +66,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="메모 목록" id="8zT-Lc-Y3n">
-                        <barButtonItem key="rightBarButtonItem" title="+" id="vGM-cW-asX"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vGM-cW-asX"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
