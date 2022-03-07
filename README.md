@@ -32,3 +32,6 @@ https://github.com/RxSwiftCommunity/NSObject-Rx
 - [Clean Architecture and MVVM on iOS](https://tech.olx.com/clean-architecture-and-mvvm-on-ios-c9d167d9f5b3)
 - [RxCoreData](https://github.com/RxSwiftCommunity/RxCoreData)
 - [RxDataSources](https://github.com/RxSwiftCommunity/RxDataSources)
+
+### 3) RxWeather
+https://github.com/KxCoding/RxWeather
