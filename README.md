@@ -24,6 +24,8 @@ https://github.com/RxSwiftCommunity/NSObject-Rx
 3) 새로운 Scene을 생성하고, 연관값으로 ViewModel을 저장
 4) coordinator에서 transition 메서드 호출 후, 파라미터로 scene 전달
 
+- Cocoa에서는 segue가 화면 이동을 처리, MVVM에서는 ViewModel이 처리
+
 - [Advanced iOS App Architecture](https://store.raywenderlich.com/products/advanced-ios-app-architecture)
 - [Clean Architecture and MVVM on iOS](https://tech.olx.com/clean-architecture-and-mvvm-on-ios-c9d167d9f5b3)
 - [RxCoreData](https://github.com/RxSwiftCommunity/RxCoreData)
