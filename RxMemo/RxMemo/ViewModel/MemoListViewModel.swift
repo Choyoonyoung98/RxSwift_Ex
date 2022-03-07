@@ -29,6 +29,7 @@ class MemoListViewModel: CommonViewModel {
         }
     }
     
+    //Action
     func performUpdate(memo: Memo) -> Action<String, Void> { //입력, 출력(Observable 방출 형태: Void)
         return Action { input in
             return self.storage.update(memo: memo, content: input).map { _ in }
