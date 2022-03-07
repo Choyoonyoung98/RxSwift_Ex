@@ -20,20 +20,20 @@ extension Scene {
         
         switch self {
         case .list(let memoListViewModel):
-            guard let listNavigationViewcontroller = storyboard.instantiateViewController(withIdentifier: "ListNav") as? UINavigationController else { fatalError() }
+            guard let listNavigationViewcontroller = storyboard.instantiateViewController(withIdentifier: "ListNavigationController") as? UINavigationController else { fatalError() }
             
             guard var listViewController = listNavigationViewcontroller.viewControllers.first as? MemoListViewController else { fatalError() }
             
             listViewController.bind(viewModel: memoListViewModel)
             return listNavigationViewcontroller
         case .detail(let memoDetailViewModel):
-            guard var detailViewController = storyboard.instantiateViewController(withIdentifier: "DetailVC") as? MemoDetailViewController else { fatalError() }
+            guard var detailViewController = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as? MemoDetailViewController else { fatalError() }
             
             detailViewController.bind(viewModel: memoDetailViewModel)
 
             return detailViewController
         case .compose(let memoCompseViewModel):
-            guard let composeNavigationViewcontroller = storyboard.instantiateViewController(withIdentifier: "ComposeNav") as? UINavigationController else { fatalError() }
+            guard let composeNavigationViewcontroller = storyboard.instantiateViewController(withIdentifier: "ComposeNavigationController") as? UINavigationController else { fatalError() }
             
             guard var composeViewController = composeNavigationViewcontroller.viewControllers.first as? MemoComposeViewController else { fatalError() }
             

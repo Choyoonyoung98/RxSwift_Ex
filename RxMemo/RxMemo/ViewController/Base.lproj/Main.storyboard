@@ -121,7 +121,7 @@
         <!--Navigation Controller-->
         <scene sceneID="tf0-0a-dOd">
             <objects>
-                <navigationController storyboardIdentifier="ListNav" automaticallyAdjustsScrollViewInsets="NO" id="eGy-a2-scO" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ListNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="eGy-a2-scO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="PFG-Wy-QFu">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -139,7 +139,7 @@
         <!--메모 보기-->
         <scene sceneID="kJB-ec-RfE">
             <objects>
-                <viewController storyboardIdentifier="DetailViewcontroller" id="eIy-X9-12e" customClass="MemoDetailViewController" customModule="RxMemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="eIy-X9-12e" customClass="MemoDetailViewController" customModule="RxMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pa3-tA-KTD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -225,7 +225,7 @@
         <!--Navigation Controller-->
         <scene sceneID="pUn-Q2-TQK">
             <objects>
-                <navigationController storyboardIdentifier="ComposeNav" automaticallyAdjustsScrollViewInsets="NO" id="D34-vf-Oku" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ComposeNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="D34-vf-Oku" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vq3-nl-lVo">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
