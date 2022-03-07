@@ -36,4 +36,10 @@ class MemoDetailViewModel: CommonViewModel {
         
         super.init(title: title, sceneCoordinator: sceneCoordinator, storage: storage)
     }
+    
+    lazy var popAction = CocoaAction { [unowned self] in
+        return self.sceneCoordinator.close(animated: true)
+            .asObservable()
+            .map{ _ in }
+    }
 }

@@ -141,7 +141,6 @@
 		4C4EE7FD27D1C15B00A34F7D /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				4C4EE81B27D234EE00A34F7D /* SceneCoordinator.swift */,
 				4C4EE80427D1D15C00A34F7D /* CoreDataStorage */,
 				4C4EE80327D1D14A00A34F7D /* MemoryStorage */,
 				4C4EE80127D1D07700A34F7D /* MemoStorageType.swift */,
@@ -154,6 +153,7 @@
 			children = (
 				4C4EE81527D22FB400A34F7D /* TransitionModel.swift */,
 				4C4EE81727D2301900A34F7D /* Scene.swift */,
+				4C4EE81B27D234EE00A34F7D /* SceneCoordinator.swift */,
 				4C4EE81927D2344A00A34F7D /* SceneCoordinatorType.swift */,
 			);
 			path = Scene;
