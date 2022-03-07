@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RxSwift
 
 class MemoDetailViewController: UIViewController, ViewModelBindableType {
     @IBOutlet weak var contentTableView: UITableView!
@@ -47,7 +48,18 @@ class MemoDetailViewController: UIViewController, ViewModelBindableType {
             }
             .disposed(by: rx.disposeBag)
         
-        editButton.rx.action = viewModel.makeEditAction() 
+        //action? tap?
+        editButton.rx.action = viewModel.makeEditAction()
+        
+        shareButton.rx.tap
+            .throttle(.milliseconds(500), scheduler: MainScheduler.instance)
+            .withUnretained(self)
+            .subscribe(onNext: { (viewController, _) in
+                let memo = viewController.viewModel.memo.content
+                let activityViewController = UIActivityViewController(activityItems: [memo], applicationActivities: nil)
+                viewController.present(activityViewController, animated: true, completion: nil)
+            })
+            .disposed(by: rx.disposeBag)
         /*
         var backButton = UIBarButtonItem(title: nil, style: .done, target: nil, action: nil)
         viewModel.title
