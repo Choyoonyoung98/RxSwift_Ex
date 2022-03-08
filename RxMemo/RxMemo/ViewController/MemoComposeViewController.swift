@@ -55,5 +55,34 @@ class MemoComposeViewController: UIViewController, ViewModelBindableType {
             .withLatestFrom(contentTextView.rx.text.orEmpty)
             .bind(to: viewModel.saveAction.inputs)
             .disposed(by: rx.disposeBag)
+        
+        let willShowObservable =
+        NotificationCenter.default.rx.notification(UIResponder.keyboardWillShowNotification)
+            .compactMap{ $0.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue }
+            .map { $0.cgRectValue.height }
+        
+        let willHideObservable = NotificationCenter.default.rx.notification(UIResponder.keyboardWillHideNotification)
+            .map { noti -> CGFloat in 0 }
+        
+        //Notification이 전달될 때마다 키보드 높이 방출
+        let keyboardObservable = Observable.merge(willShowObservable, willHideObservable)
+            .share()
+        
+        //textView inset을 조절해서 하단 여백 설정
+        keyboardObservable
+            //.withUnretained(contentTextView) //textView를 파라미터로 아래에서 받고 있기 때문에 필요없다
+            .toContentInset(of: contentTextView)
+            .bind(to: contentTextView.rx.contentInset)
+            .disposed(by: rx.disposeBag)
+    }
+}
+
+extension ObservableType where Element == CGFloat {
+    func toContentInset(of textView: UITextView) -> Observable<UIEdgeInsets> {
+        return map { height in
+            var inset = textView.contentInset
+            inset.bottom = height
+            return inset
+        }
     }
 }
