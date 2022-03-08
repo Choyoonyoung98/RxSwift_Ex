@@ -25,7 +25,8 @@ https://github.com/RxSwiftCommunity/NSObject-Rx
 4) coordinator에서 transition 메서드 호출 후, 파라미터로 scene 전달
 
 - Cocoa에서는 segue가 화면 이동을 처리, MVVM에서는 ViewModel이 처리
-
+- Cocoa 기본 Extension인 Delegate가 아닌, RxDataSources를 통한 구현
+- MemoryStorage에 대한 의존을 덜어내고, CoreDataStorage 사용으로 변경
 > 생각해볼만한 문제: tap과 action을 통한 구현의 장단점 생각해보기
 
 - [Advanced iOS App Architecture](https://store.raywenderlich.com/products/advanced-ios-app-architecture)
