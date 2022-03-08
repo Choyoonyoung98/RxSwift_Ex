@@ -11,7 +11,7 @@ import RxCocoa
 import Action
 
 class MemoDetailViewModel: CommonViewModel {
-    let memo: Memo //이전 Scene에서의 메모가 전달
+    var memo: Memo //이전 Scene에서의 메모가 전달
     
     //날짜 -> 문자열로 전환하기 위한 formatter
     private var formatter: DateFormatter = {
@@ -47,6 +47,7 @@ class MemoDetailViewModel: CommonViewModel {
     func performUpdate(memo: Memo) -> Action<String, Void> {
         return Action { input in
             self.storage.update(memo: memo, content: input)
+                .do(onNext: { self.memo = $0 }) //편집 화면 오류 수정 - 새롭게 방출된 데이터를 메모에 저장
                 .map { [$0.content, self.formatter.string(from: $0.insertDate)] }
                 .bind(onNext: { self.contents.onNext($0)}) //새로운 내용을 subject로 전달
                 .disposed(by: self.rx.disposeBag)

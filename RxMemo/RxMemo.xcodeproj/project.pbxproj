@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C2AE81E27D72183008B32D3 /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2AE81D27D72183008B32D3 /* CoreDataStorage.swift */; };
 		4C4EE7E427D1BF5C00A34F7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4EE7E327D1BF5C00A34F7D /* AppDelegate.swift */; };
 		4C4EE7E627D1BF5C00A34F7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4EE7E527D1BF5C00A34F7D /* SceneDelegate.swift */; };
 		4C4EE7EB27D1BF5C00A34F7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4EE7E927D1BF5C00A34F7D /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		04058000AA5AFE01DAA1D8E6 /* Pods-RxMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMemo.debug.xcconfig"; path = "Target Support Files/Pods-RxMemo/Pods-RxMemo.debug.xcconfig"; sourceTree = "<group>"; };
 		1E97795AF82E5DA48BE6900B /* Pods-RxMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMemo.release.xcconfig"; path = "Target Support Files/Pods-RxMemo/Pods-RxMemo.release.xcconfig"; sourceTree = "<group>"; };
+		4C2AE81D27D72183008B32D3 /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
 		4C4EE7E027D1BF5C00A34F7D /* RxMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4EE7E327D1BF5C00A34F7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C4EE7E527D1BF5C00A34F7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				4C4EE7EC27D1BF5C00A34F7D /* RxMemo.xcdatamodeld */,
+				4C2AE81D27D72183008B32D3 /* CoreDataStorage.swift */,
 			);
 			path = CoreDataStorage;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C4EE80627D1D18200A34F7D /* MemoryStorage.swift in Sources */,
+				4C2AE81E27D72183008B32D3 /* CoreDataStorage.swift in Sources */,
 				4C4EE81227D1FDE200A34F7D /* MemoComposeViewModel.swift in Sources */,
 				4C4EE81C27D234EE00A34F7D /* SceneCoordinator.swift in Sources */,
 				4C4EE81827D2301900A34F7D /* Scene.swift in Sources */,

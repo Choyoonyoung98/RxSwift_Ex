@@ -14,6 +14,7 @@ protocol SceneCoordinatorType {
     func transition(to scene: Scene, using style: TransitionStyle, animated: Bool) -> Completable
     
     //2) 현재 Scene을 닫고, 이전 Scene으로 돌아간다
+    
     @discardableResult
     func close(animated: Bool) -> Completable
 }
