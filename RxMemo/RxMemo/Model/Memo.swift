@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import RxDataSources //TableView와 CollectionView에 바인딩할 수 있는 datasource 제공
 
 //메모 구조체 선언
-struct Memo: Equatable {
+struct Memo: Equatable, IdentifiableType {
     var content: String //메모
     var insertDate: Date //생성날짜
     var identity: String //메모를 구분하기 위한 id

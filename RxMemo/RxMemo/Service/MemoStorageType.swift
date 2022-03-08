@@ -10,7 +10,7 @@ import RxSwift
 
 protocol MemoStorageType {
     @discardableResult
-    func memoList() -> Observable<[Memo]>
+    func memoList() -> Observable<[MemoSectionModel]>
     
     @discardableResult //작업결과가 필요 없는 경우가 있기 때문에 추가
     func createMemo(content: String) -> Observable<Memo> //구독자가 작업결과를 원하는 방향으로 활용할 수 있다

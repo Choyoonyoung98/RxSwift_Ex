@@ -9,11 +9,28 @@ import Foundation
 import RxSwift
 import RxCocoa
 import Action //화면 처리를 도와주는 라이브러리?
+import RxDataSources
+
+typealias MemoSectionModel = AnimatableSectionModel<Int, Memo> //Section 데이터 형식, row 데이터 형식
 
 class MemoListViewModel: CommonViewModel {
-    var memoList: Observable<[Memo]> {
+    var memoList: Observable<[MemoSectionModel]> {
         return storage.memoList()
     }
+    
+    let dataSource: RxTableViewSectionedAnimatedDataSource<MemoSectionModel> = {
+        //클로저를 통한 초기화
+        let dataSource = RxTableViewSectionedAnimatedDataSource<MemoSectionModel>(configureCell: {
+            (dataSource, tableView, indexPath, memo) -> UITableViewCell in
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+            cell.textLabel?.text = memo.content
+            return cell
+        })
+        
+        dataSource.canEditRowAtIndexPath = { _, _ in return true }
+        return dataSource
+    }()
     
     func makeCreateAction() -> CocoaAction {
         return CocoaAction { _ in
